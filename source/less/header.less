@@ -2,32 +2,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   padding: 10px 20px 18px;
 }
 
 .main-header__button {
   position: relative;
-  width: 23px;
-  height: 4px;
+  width: 24px;
+  height: 16px;
   border: 0;
   background-color: #fff;
-  padding: 0;
-  margin: 0 15px;
-}
-
-.main-header__button::before {
-  transform: translateY(-7.5px);
-  box-shadow: 0 7.5px 0#000000;
+  //padding: 0;
+  //margin: 0 15px;
 }
 
 .main-header__button::after, .main-header__button::before {
   content: "";
   position: absolute;
-  width: 22px;
+  width: 24px;
   height: 2px;
   left: 0;
   border: 0;
   background-color: #000000;
   transform: translateY(7.5px);
+}
+
+.main-header__button::before {
+  transform: translateY(-7.5px);
+  box-shadow: 0 7.5px 0#000000;
 }
