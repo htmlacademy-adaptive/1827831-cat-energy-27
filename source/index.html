@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css"/>
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="source/favicon.ico" />
   <link rel="icon" href="source/img/favicon.svg" type="image/svg+xml" />
   <link
     rel="preload"
@@ -81,11 +81,10 @@
       <a class="action__choose button" href="#">подобрать программу</a>
     </div>
   </section>
-  <section class="programmes">
-    <div class="programmes__wrapper">
-      <svg width="50" height="53" class="programmes__slim">
-      </svg>
-      <div class="programmes__title">
+  <section>
+    <ul class="programmes">
+    <li class="programmes__wrapper programmes__wrapper-margin">
+      <div class="programmes__title programmes__title-slim">
         похудение
       </div>
       <p class="programmes__description">
@@ -94,15 +93,10 @@
       </p>
       <div class="catalog__link">
         каталог slim
-        <p><i class="catalog__link-arrow catalog__link-arrow-right"></i></p>
       </div>
-    </div>
-  </section>
-  <section class="programmes">
-    <div class="programmes__wrapper">
-      <svg width="67" height="50" class="programmes__pro">
-      </svg>
-      <div class="programmes__title">
+    </li>
+    <li class="programmes__wrapper">
+      <div class="programmes__title programmes__title-pro">
         Набор массы
       </div>
       <p class="programmes__description">
@@ -112,40 +106,29 @@
       <div class="catalog__link">
         каталог pro
       </div>
-    </div>
+    </li>
+    </ul>
   </section>
   <section class="advantages">
     <h2 class="advantages__title">Как это работает
     </h2>
     <ul class="advantages__list">
-      <li class="advantages__item">
-        <svg>
-          width="60" height="60" class="advantages__item-food">
-        </svg>
+      <li class="advantages__item advantages__item-leaf">
         <p class="advantages__description">
           Функциональное питание содержит только полезные питательные вещества.
         </p>
       </li>
-      <li class="advantages__item">
-        <svg>
-          width="60" height="60" class="advantages__item-powder">
-        </svg>
+      <li class="advantages__item advantages__item-powder">
         <p class="advantages__description">
           Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
         </p>
       </li>
-      <li class="advantages__item">
-        <svg>
-          width="60" height="60" class="advantages__item-saving">
-        </svg>
+      <li class="advantages__item advantages__item-eat">
         <p class="advantages__description">
           Замените один-два приема обычной еды на наше функциональное питание.
         </p>
       </li>
-      <li class="advantages__item">
-        <svg>
-          width="60" height="60" class="advantages__item-improve">
-        </svg>
+      <li class="advantages__item advantages__item-watch">
         <p class="advantages__description">
           Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </p>
@@ -174,9 +157,10 @@
           затрачено времени
         </p>
       </div>
+    </div>
       <h4 class="total">Затраты на питание: 15 000 РУБ.
       </h4>
-    </div>
+
     <img src="./img/cat-slider-mobile.png" width="280" height="256" alt="Пример кота.">
   </section>
   <div class="contacts">

@@ -1,14 +1,58 @@
 .programmes {
   padding: 20px;
   min-height: 266px;
-  //background-color: #F2F2F2;
+  list-style-type: none;
+  margin: 0;
 }
 
 .programmes__title {
+  display: flex;
+  align-items: center;
+  position: relative;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  padding-left: 54px;
+}
+
+.programmes__title-slim::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: @basic-green;
+  border-radius: 100%;
+  left: -4px;
+}
+
+.programmes__title-slim::after {
+  content: "";
+  position: absolute;
+  background: url("../img/cat-slim.svg") no-repeat center;
+  width: 50px;
+  height: 50px;
+  left: -4px;
+}
+
+.programmes__title-pro:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: @basic-green;
+  border-radius: 100%;
+  left: -4px;
+}
+
+.programmes__title-pro::after {
+  content: "";
+  position: absolute;
+  background: url("../img/cat-pro.svg") no-repeat center;
+  width: 67px;
+  height: 50px;
+  right: 179px;
+  left: -17px;
 }
 
 .programmes__description {
@@ -18,4 +62,13 @@
   color: #444444;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
+}
+
+.programmes__wrapper {
+  background-color: @basic-grey;
+  padding: 22px;
+}
+
+.programmes__wrapper-margin {
+  margin-bottom: 20px;
 }
