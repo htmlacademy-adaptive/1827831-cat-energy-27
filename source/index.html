@@ -40,19 +40,11 @@
 <header class="main-header">
   <a class="main-header__logo">
     <img
-      src="./img/logo-mobile.svg"
-      width="33"
+      src="./img/logo-group.svg"
+      width="191"
       height="38"
       alt="Логотип Кэт энерджи."
       class="main-header__logo-image"
-    />
-  </a>
-  <a class="main-header__logo-text">
-    <img
-      src="./img/logo-text.svg"
-      width="101"
-      height="18"
-      alt="Логотип-текст Кэт энерджи."
     />
   </a>
   <div class="main-header__container">
@@ -99,6 +91,29 @@
         alt="Корм со вкусом курицы."
         class="main__block-image"
       />
+      <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="
+                        ./img/image-can-desktop.webp 1x,
+                        ./img/image-can-desktop-2x.webp 2x
+                      ">
+        <source type="image/webp" media="(min-width: 768px)" srcset="
+                        ./img/image-can-tablet.webp 1x,
+                        ./img/image-can-tablet-2x.png 2x
+                      ">
+        <source type="image/webp" media="(max-width: 767px)" srcset="
+                        ./img/photo-city-mobile.webp 1x,
+                        ./img/photo-city-mob-2x.webp 2x
+                      ">
+        <source media="(min-width: 1200px)" srcset="
+                        ./img/photo-city-desktop@1x.jpg 1x,
+                        ./img/photo-city-desktop@2x.jpg 2x
+                      ">
+        <source media="(min-width: 768px)" srcset="
+                        ./img/photo-city@1x.jpg        1x,
+                        ./img/photo-city-tablet@2x.jpg 2x
+                      ">
+        <img src="./img/photo-city-mobile.jpg" srcset="./img/photo-city-mob-2x.jpg 2x" width="520" height="260" alt="Фото Седоны." class="advantage__section-img">
+      </picture>
       <a class="action__choose button" href="#">подобрать программу</a>
     </div>
   </section>

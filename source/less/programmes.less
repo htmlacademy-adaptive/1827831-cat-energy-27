@@ -35,6 +35,26 @@
   left: -4px;
 }
 
+@media (min-width: @tablet-width) {
+  .programmes__title-slim::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: @basic-green;
+    border-radius: 100%;
+    left: -4px;
+  }
+  .programmes__title-slim::after {
+    content: "";
+    position: absolute;
+    background: url("../img/cat-slim-tablet.png") no-repeat center;
+    width: 140px;
+    height: 194px;
+    left: -4px;
+  }
+}
+
 .programmes__title-pro:before {
   content: "";
   position: absolute;
@@ -53,6 +73,28 @@
   height: 50px;
   right: 179px;
   left: -17px;
+}
+
+@media (min-width: @tablet-width) {
+  .programmes__title-pro:before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: @basic-green;
+    border-radius: 100%;
+    left: -4px;
+  }
+
+  .programmes__title-pro::after {
+    content: "";
+    position: absolute;
+    background: url("../img/cat-pro-tablet.png") no-repeat center;
+    width: 268px;
+    height: 112px;
+    right: 179px;
+    left: -17px;
+  }
 }
 
 .programmes__description {

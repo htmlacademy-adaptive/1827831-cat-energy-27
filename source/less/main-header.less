@@ -14,43 +14,95 @@
   }
 }
 
-.main-header__menu-nojs {
-  display: block;
+@media (min-width: @tablet-width) {
+  .main-header__menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: transparent;
+    z-index: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-header__menu-nojs {
+    display: block;
+    position: relative;
+  }
+
+  .main-header__container {
+    display: flex;
+    justify-content: end;
+  }
+
+  .main-header__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main-header__section {
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 22px 0 24px;
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+  }
+
+  .main-header__link {
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+.main-header {
   position: relative;
-}
-
-.main-header__container {
   display: flex;
-  justify-content: end;
-}
-
-.main-header__item {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  padding: 10px 20px 18px;
 }
 
-.main-header__section {
+.main-header__button {
   position: relative;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #000000;
-  list-style-type: none;
-  text-decoration: none;
-  text-align: center;
-  padding: 22px 0 24px;
-  border-top: 1px solid #e6e6e6;
-  width: 100%;
+  width: 24px;
+  height: 16px;
+  border: 0;
+  background-color: #fff;
+  //padding: 0;
+  //margin: 0 15px;
 }
 
-.main-header__link {
-  font-size: 20px;
-  line-height: 20px;
-  text-decoration: none;
-  color: #000000;
+.main-header__button::after, .main-header__button::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  left: 0;
+  border: 0;
+  background-color: #000000;
+  transform: translateY(7.5px);
+}
+
+.main-header__button::before {
+  transform: translateY(-7.5px);
+  box-shadow: 0 7.5px 0 #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__button {
+    display: none;
+  }
 }
