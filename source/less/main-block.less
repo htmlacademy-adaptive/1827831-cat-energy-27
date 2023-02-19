@@ -13,6 +13,12 @@
   background-size: cover;
 }
 
+@media (min-width: @tablet-width) {
+  .main__block-description {
+
+  }
+}
+
 .main__block-layer {
   background-color: rgba(104, 183, 56, 0.85);
   position: absolute;
@@ -45,13 +51,23 @@
   z-index: 10;
 }
 
+@media (max-width: @tablet-width - 1px) {
+  .main__block-title br {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main__block-title {
     color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
   }
 }
 
 .main__block-slogan {
+  font-family: "Oswald";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -65,6 +81,9 @@
 @media (min-width: @tablet-width) {
   .main__block-slogan {
     color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
   }
 }
 
@@ -77,7 +96,21 @@
   padding: 0 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .main__block-action {
+  min-height: 629px;
+  }
+}
+
 .main__block-image {
   position: absolute;
   top: -135px;
+}
+
+@media (min-width: @tablet-width) {
+  .main__block-image {
+    width: 709px;
+    height: 609px;
+    top: -34px;
+  }
 }

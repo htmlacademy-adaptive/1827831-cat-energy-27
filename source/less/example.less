@@ -3,6 +3,12 @@
   padding: 25px 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+}
+
 .example__title {
   font-family: 'Oswald';
   font-weight: 400;
@@ -10,6 +16,13 @@
   line-height: 40px;
   color: #000000;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__title-description {
@@ -20,4 +33,12 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .example__title-description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 54px;
+  }
 }

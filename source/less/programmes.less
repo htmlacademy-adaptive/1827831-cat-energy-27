@@ -17,6 +17,14 @@
   padding-left: 54px;
 }
 
+@media (min-width: @tablet-width) {
+  .programmes__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
+}
+
 .programmes__title-slim::before {
   content: "";
   position: absolute;
@@ -39,20 +47,20 @@
 @media (min-width: @tablet-width) {
   .programmes__title-slim::before {
     content: "";
-    position: absolute;
     width: 200px;
     height: 200px;
     background-color: @basic-green;
     border-radius: 100%;
-    left: -4px;
+    left: 412px;
+    top: 11px;
   }
   .programmes__title-slim::after {
     content: "";
-    position: absolute;
     background: url("../img/cat-slim-tablet.png") no-repeat center;
     width: 140px;
     height: 194px;
-    left: -4px;
+    left: 429px;
+    top: -11px;
   }
 }
 
@@ -79,12 +87,12 @@
 @media (min-width: @tablet-width) {
   .programmes__title-pro:before {
     content: "";
-    position: absolute;
     width: 200px;
     height: 200px;
     background-color: @basic-green;
     border-radius: 100%;
-    left: -4px;
+    left: 420px;
+    top: -3px;
   }
 
   .programmes__title-pro::after {
@@ -94,7 +102,8 @@
     width: 268px;
     height: 112px;
     right: 179px;
-    left: -17px;
+    left: 354px;
+    top: 38px;
   }
 }
 
@@ -107,11 +116,35 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-.programmes__wrapper {
+@media (min-width: @tablet-width) {
+  .programmes__description {
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    margin: 0;
+    padding: 24px 0 48px;
+  }
+}
+
+.programmes__item {
   background-color: @basic-grey;
   padding: 22px;
 }
 
-.programmes__wrapper-margin {
+@media (min-width: @tablet-width) {
+  .programmes__item {
+    min-height: 218px;
+    padding: 77px 53px;
+  }
+}
+
+.programmes__item-margin {
   margin-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .programmes__wrapper {
+    max-width: 60%;
+  }
+}
+

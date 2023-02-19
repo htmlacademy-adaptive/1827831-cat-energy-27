@@ -3,11 +3,6 @@
   justify-content: space-between;
 }
 
-.module__left,
-.module__right {
-  text-align: center;
-}
-
 .module__left-title,
 .module__right-title {
   font-family: 'Oswald';
@@ -15,6 +10,15 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .module__left-title,
+  .module__right-title {
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0;
+  }
 }
 
 .module__left-description,
@@ -28,6 +32,17 @@
   margin: 0 0 -10px 0;
 }
 
+@media (min-width: @tablet-width) {
+  .module__left-description,
+  .module__right-description {
+    background-color: #ffffff;
+    font-size: 14px;
+    margin-bottom: -22px;
+    margin-top: 10px;
+    max-width: 125px;
+  }
+}
+
 .module__left,
 .module__right {
   border: 1px solid #cdcdcd;
@@ -39,4 +54,20 @@
   border-radius: 3px;
   width: 124px;
   height: 70px;
+}
+
+@media (min-width: @tablet-width) {
+  .module__left,
+  .module__right {
+    width: 162px;
+    margin-right: 42px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .module-total-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

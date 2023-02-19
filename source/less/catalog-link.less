@@ -7,6 +7,13 @@
   font-weight: 400;
 }
 
+@media (min-width: @tablet-width) {
+  .catalog__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .catalog__link::after {
   content: "";
   position: absolute;
@@ -14,4 +21,10 @@
   width: 24px;
   height: 12px;
   margin-left: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__link::after {
+    top: 10px;
+  }
 }
