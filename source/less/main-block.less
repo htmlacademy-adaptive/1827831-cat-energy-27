@@ -1,8 +1,8 @@
-.main__block {
+.main-container__block{
 
 }
 
-.main__block-description {
+.main-container__block-description {
   position: relative;
   display: flex;
   align-items: center;
@@ -14,12 +14,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main__block-description {
+  .main-container__block-description {
 
   }
 }
 
-.main__block-layer {
+.main-container__block-layer {
   background-color: rgba(104, 183, 56, 0.85);
   position: absolute;
   top: 0;
@@ -28,8 +28,8 @@
   height: 100%;
 }
 
-@media (min-width: @tablet-width) {
-  .main__block-layer {
+@media (min-width: @tablet-width) and (max-width: @tablet-width - 1px) {
+  .main-container__block-layer {
     background-color: #ffffff;
     position: absolute;
     top: 0;
@@ -39,7 +39,16 @@
   }
 }
 
-.main__block-title {
+@media (min-width: @desktop-width) {
+  background-color: rgba(104, 183, 56, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container__block-title {
   font-family: "Oswald", "Arial", sans-serif;
   padding: 27px 0 25px;
   margin: 0;
@@ -52,13 +61,13 @@
 }
 
 @media (max-width: @tablet-width - 1px) {
-  .main__block-title br {
+  .main-container__block-title br {
     display: none;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .main__block-title {
+  .main-container__block-title {
     color: #000000;
     font-size: 60px;
     line-height: 60px;
@@ -66,7 +75,7 @@
   }
 }
 
-.main__block-slogan {
+.main-container__block-slogan {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 14px;
@@ -79,7 +88,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main__block-slogan {
+  .main-container__block-slogan {
     color: #000000;
     font-size: 20px;
     line-height: 20px;
@@ -87,7 +96,7 @@
   }
 }
 
-.main__block-action {
+.main-container__block-action {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -97,18 +106,18 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main__block-action {
+  .main-container__block-action {
   min-height: 629px;
   }
 }
 
-.main__block-image {
+.main-container__block-image {
   position: absolute;
   top: -135px;
 }
 
 @media (min-width: @tablet-width) {
-  .main__block-image {
+  .main-container__block-image {
     width: 709px;
     height: 609px;
     top: -34px;
