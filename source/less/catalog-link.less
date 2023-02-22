@@ -1,0 +1,30 @@
+.programmes__catalog__link {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+}
+
+@media (min-width: @tablet-width) {
+  .programmes__catalog__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.programmes__catalog__link::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/arrow-right.svg");
+  width: 24px;
+  height: 12px;
+  margin-left: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .programmes__catalog__link::after {
+    top: 10px;
+  }
+}

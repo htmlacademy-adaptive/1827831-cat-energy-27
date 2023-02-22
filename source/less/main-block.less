@@ -1,0 +1,125 @@
+.main-container__block{
+
+}
+
+.main-container__block-description {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: url("../img/main-image-background-mob.jpg") no-repeat center;
+  min-height: 302px;
+  background-size: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__block-description {
+
+  }
+}
+
+.main-container__block-layer {
+  background-color: rgba(104, 183, 56, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: @tablet-width) and (max-width: @tablet-width - 1px) {
+  .main-container__block-layer {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  background-color: rgba(104, 183, 56, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container__block-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  padding: 27px 0 25px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 10;
+}
+
+@media (max-width: @tablet-width - 1px) {
+  .main-container__block-title br {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__block-title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+.main-container__block-slogan {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 29px;
+  z-index: 10;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__block-slogan {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+
+.main-container__block-action {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 138px + 42px;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__block-action {
+  min-height: 629px;
+  }
+}
+
+.main-container__block-image {
+  position: absolute;
+  top: -135px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__block-image {
+    width: 709px;
+    height: 609px;
+    top: -34px;
+  }
+}

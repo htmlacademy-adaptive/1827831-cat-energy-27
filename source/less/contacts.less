@@ -1,0 +1,45 @@
+.contacts-title {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-title {
+    max-width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contacts-address {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-address {
+    max-width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.contacts {
+  display: flex;
+  padding: 26px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 70px;
+  }
+}

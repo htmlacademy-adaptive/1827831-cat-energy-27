@@ -1,0 +1,44 @@
+.social-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid @basic-grey;
+  border-top: 1px solid @basic-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    padding-right: 24px;
+    border: none;
+  }
+}
+
+.social-list__link--vkontakte {
+background: url("../img/icon-vk.svg") no-repeat center;
+  width: 28px;
+  height: 22px;
+  padding-right: 24px;
+}
+
+.social-list__link--youtube {
+  background: url("../img/icon-youtube.svg") no-repeat center;
+  width: 28px;
+  height: 22px;
+}
+
+.social-list__link--telegram {
+  background: url("../img/icon-telegram.svg") no-repeat center;
+  width: 28px;
+  height: 22px;
+  padding-right: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list__item {
+    margin-right: 24px;
+    padding-right: 0;
+  }
+}
+

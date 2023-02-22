@@ -1,0 +1,44 @@
+.example {
+  background-color: @basic-grey;
+  padding: 25px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+}
+
+.example__title {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__title-description {
+  margin: 0;
+  padding: 40px 0 20px;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .example__title-description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 54px;
+  }
+}
