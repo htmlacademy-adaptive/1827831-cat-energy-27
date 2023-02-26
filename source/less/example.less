@@ -9,6 +9,14 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .example {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 .example__title {
   font-family: 'Oswald';
   font-weight: 400;
@@ -22,6 +30,28 @@
   .example__title {
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__title {
+    padding-bottom: 76px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: self-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    background-color: #e6e6e6;
+    display: flex;
   }
 }
 

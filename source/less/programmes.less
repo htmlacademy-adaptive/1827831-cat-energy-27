@@ -5,6 +5,17 @@
   margin: 0;
 }
 
+@media (min-width: @desktop-width) {
+  .programmes {
+    display: flex;
+    gap: 80px;
+    max-width: 1220px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 .programmes__title {
   font-family: "Oswald";
   display: flex;
@@ -22,6 +33,12 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programmes__title {
+    padding-left: 214px;
   }
 }
 
@@ -61,6 +78,26 @@
     height: 194px;
     left: 429px;
     top: -11px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programmes__title-slim::after {
+    content: "";
+    background: url("../img/cat-slim-desktop.svg") no-repeat center;
+    width: 70px;
+    height: 97px;
+    left: 0;
+    top: -17px;
+  }
+  .programmes__title-slim::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: @basic-green;
+    border-radius: 100%;
+    left: -2px;
+    top: -4px;
   }
 }
 
@@ -107,6 +144,28 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .programmes__title-pro:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: @basic-green;
+    border-radius: 100%;
+    left: -2px;
+    top: -4px;
+  }
+
+  .programmes__title-pro::after {
+    content: "";
+    position: absolute;
+    background: url("../img/cat-pro-desktop.svg") no-repeat center;
+    width: 134px;
+    height: 56px;
+    left: -21px;
+    top: 15px;
+  }
+}
+
 .programmes__description {
   font-weight: 400;
   font-size: 14px;
@@ -126,6 +185,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .programmes__description {
+    min-width: 457px;
+    padding: 73px 0 23px;
+  }
+}
+
 .programmes__item {
   background-color: @basic-grey;
   padding: 22px;
@@ -138,8 +204,20 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .programmes__item {
+   padding: 47px 52px;
+  }
+}
+
 .programmes__item-margin {
   margin-bottom: 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .programmes__item-margin {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -148,3 +226,8 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .programmes__wrapper {
+    max-width: unset;
+  }
+}
