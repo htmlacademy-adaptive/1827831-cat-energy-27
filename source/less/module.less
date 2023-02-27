@@ -10,6 +10,8 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin-top: 23px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,6 +45,14 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .module__left-description,
+  .module__right-description {
+    background-color: @basic-grey;
+    margin-bottom: -17px;
+  }
+}
+
 .module__left,
 .module__right {
   border: 1px solid #cdcdcd;
@@ -53,7 +63,7 @@
   justify-content: center;
   border-radius: 3px;
   width: 124px;
-  height: 70px;
+  height: 56px;
 }
 
 @media (min-width: @tablet-width) {
@@ -69,5 +79,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .module-total-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -21,6 +21,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  padding-left: 26px;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,7 +34,7 @@
 
 .contacts {
   display: flex;
-  padding: 26px 20px;
+  padding: 10px 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -42,4 +43,19 @@
     justify-content: space-between;
     padding: 60px 70px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: absolute;
+    background-color: #ffffff;
+    max-width: 565px;
+    padding: 56px 60px 56px 80px;
+    z-index: 10;
+    margin-left: 110px;
+    margin-top: 95px;
+  }
+}
+
+.contacts-address-wrapper {
 }

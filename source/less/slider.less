@@ -4,6 +4,7 @@
 
 .slider__image {
   width: auto;
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,12 +22,19 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .example__slider {
+    display: flex;
+    justify-content: end;
+  }
+}
+
 .slider__button {
   position: relative;
   background: #666666;
   width: 4px;
   border: none;
-  height: 256px;
+  height: 309px;
 }
 
 .slider__icon {

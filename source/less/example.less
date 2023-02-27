@@ -1,11 +1,19 @@
 .example {
   background-color: @basic-grey;
-  padding: 25px 20px;
+  padding: 6px 20px;
 }
 
 @media (min-width: @tablet-width) {
   .example {
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -15,13 +23,36 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 0;
 }
 
 @media (min-width: @tablet-width) {
   .example__title {
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__title {
+    padding-bottom: 76px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: self-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    background-color: #e6e6e6;
+    display: flex;
   }
 }
 
