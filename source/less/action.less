@@ -4,21 +4,26 @@
   width: 100%;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
   .main-container__choose-button {
     width: 244px;
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 595px;
     z-index: 10;
-    margin-left: 121px;
+    margin-left: 101px;
     padding: 14px 26px;
+    min-height: 54px;
+    margin-top: -13px;
   }
 }
 
 @media (min-width: @desktop-width) {
  .main-container__choose-button {
    margin-bottom: 326px;
-   margin-left: 0;
+   margin-left: 99px;
+   max-width: 244px;
+   align-self: start;
+   text-align: start;
  }
 }
